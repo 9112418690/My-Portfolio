@@ -9,15 +9,12 @@ import slideImg3 from "../../assets/slide-icon-3.svg";
 import slideImg4 from "../../assets/slide-icon-4.svg";
 import slideImg5 from "../../assets/slide-icon-5.svg";
 
-
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import "@splidejs/react-splide/css";
 
-
-
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, EffectCoverflow ,Keyboard} from "swiper/modules";
+import { Autoplay, EffectCoverflow, Keyboard } from "swiper/modules";
 // import "swiper/css"
 // import "swiper/css/effect-cover-flow";
 import "swiper/css";
@@ -33,23 +30,16 @@ import CountUp from "react-countup";
 import mailIcon from "../../assets/Google.png";
 
 function Index() {
-
   const careerList = [
     { title: "Google Cloud", year: "2025-Present" },
     { title: "Java,React", year: "2024-2025" },
-    {title: "C,C++", year: "2023-2024",},
-    {title: "HTML,CSS,Javascript",year: "2021-2023",},
+    { title: "C,C++", year: "2023-2024" },
+    { title: "HTML,CSS,Javascript", year: "2021-2023" },
   ];
 
-      const tools =[icons1 , icons2 , icons3 , icons4 , icons5 ];
+  const tools = [icons1, icons2, icons3, icons4, icons5];
 
-      const tags = [
-        " Courses ",
-        "Quizzes",
-        "Labs",
-        "Trivias",
-        "Games"
-      ];
+  const tags = [" Courses ", "Quizzes", "Labs", "Trivias", "Games"];
 
   return (
     <>
@@ -57,7 +47,7 @@ function Index() {
       <span className="bg-elm fixed top-0 left-[50%] h-[100vh] w-[1px] bg-[--thin-border] z-[1]"></span>
       <span className="bg-elm fixed top-0 left-[80%] h-[100vh] w-[1px] bg-[--thin-border] z-[1]"></span>
       {/*Hero */}
-      <div className="lg:px-[12%] px-[8%] py-[150px] pt-0 hero">
+      <div className="lg:px-[12%] px-[8%] pt-0 hero">
         <div className="flex flex-col gap-8 lg:flex-row">
           {/* Left Side */}
           <div className="flex-1 text-white rounded-lg pt-[150px] hero-content">
@@ -77,7 +67,11 @@ function Index() {
                 <h5 className="text-gray-400 text-x1">
                   Feel Free To Contact Me
                 </h5>
-                <h2 className="mt-1 text-4xl">Example2info.com</h2>
+                <h2 className="mt-1 text-4xl">
+                  <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=XBcJlJnXtrdXprKxnRhwKcLhFjglQBtzmWZVZjPqXZwPWmBLmktlkhWlFCrKHHWxzGCPrcLZvXCfcHmb">
+                    gouranmol7276@gmail.com
+                  </a>
+                </h2>
               </div>
             </div>
           </div>
@@ -89,7 +83,7 @@ function Index() {
         </div>
       </div>
       {/*Hero marquee*/}
-      <div className="marquee-box w-full bg-[--primary-color] py-5">
+      {/* <div className="marquee-box w-full bg-[--primary-color] py-5">
         <marquee behavior="alternate" direction="">
           <div className="marquee-content flex flex-row gap-[200px]">
             <div className="flex items-center gap-3">
@@ -164,11 +158,11 @@ function Index() {
             </div>
           </div>
         </marquee>
-      </div>
+      </div> */}
       {/*Tilte */}
-      <div className="relative text-center w-full py-[80px] pt-0">
-        <span className="section-subtitle px-3 py-1 text-[#ec4634] inline-block border border-[#393939] bg-[#161616] rounded-full text-sm font-normal mb-6">
-          Know Me
+      <div id="About" className="relative text-center w-full py-[10px] pt-0">
+        <span className="section-subtitle px-3 py-2 text-[#ec4634] inline-block border border-[#393939] bg-[#161616] rounded-full text-sm font-normal mb-6 cursor-pointer">
+          About Me
         </span>
         <Splide
           options={{
@@ -203,52 +197,57 @@ function Index() {
       {/* Work */}
       <div className="w-full work lg:px-[12%] px-[8%] pb-[150px] md:pt-[50px] space-y-20">
         <div className="w-full text-center work-content">
-          <span className="text-xl text-white md:text-3xl lg:text-4xl xl:text-6xl leading-[30px] sm:leading-[50px] lg:leading-[60px] xl:leading-[80px] font-semibold capitalize text-center">
-            Work as entrepreneur to turn ideas into reality by the developing
-            products, the design fixes, and the no-code technologies.
+          <span className="text-base text-white md:text-lg lg:text-xl xl:text-2xl leading-[24px] sm:leading-[32px] lg:leading-[40px] xl:leading-[48px] font-medium capitalize text-center">
+            I'm Anmol Gour, currently pursuing my B.Tech in Computer Science
+            Engineering. I have a strong interest in Full Stack Web Development,
+            and I’m actively learning and working with technologies such as
+            HTML, CSS, JavaScript, Node.js, MongoDB, React, Vite, Tailwind CSS,
+            Angular,Bootstrap, and Google Cloud. In addition to my development
+            work, I’m passionate about Problem Solving and enjoy tackling coding
+            challenges to sharpen my logic and analytical skills.
           </span>
         </div>
-        <div className="grid justify-center w-full grid-cols-1 gap-6 work-wrapper xl:grid-cols-4 item-center xl:gap-0">
+        <div className="grid justify-center w-full grid-cols-1 gap-6 work-wrapper xl:grid-cols-3 item-center xl:gap-0">
           <div className="w-full work-item h-[350px] xxl:h-[300px] rounded-[50%] flex justify-center items-center flex-col border border-[#393939] gap-3 group duration-400">
             <div className="inline-flex items-center justify-center text-6xl font-bold text-white xxl:text-8xl">
               <span className="duration-300 transition-color group-hover:text-[#ec4634]">
-                95
+                150
               </span>
               <span className="duration-300 transition-color group-hover:text-[#ec4634]">
                 +
               </span>
             </div>
-            <h5 className="text-lg font-bold text-white xxl:text-xl">
-              Project Done
-            </h5>
+            <h6 className="text-lg font-bold text-white xxl:text-xl">
+              Led 150+ Students <br></br> in Google Cloud Program
+            </h6>
           </div>
           <div className="w-full work-item h-[350px] xxl:h-[300px] rounded-[50%] flex justify-center items-center flex-col border border-[#393939] gap-3 group duration-400">
             <div className="inline-flex items-center justify-center text-6xl font-bold text-white xxl:text-8xl">
               <span className="duration-300 transition-colors group-hover:text-[#ec4634]">
-                85
+                8
               </span>
               <span className="duration-300 transition-colors group-hover:text-[#ec4634]">
                 +
               </span>
             </div>
             <h5 className="text-lg font-bold text-white xxl:text-xl">
-              prototyping
+              Projects Done
             </h5>
           </div>
           <div className="w-full work-item h-[350px] xxl:h-[300px] rounded-[50%] flex justify-center items-center flex-col border border-[#393939] gap-3 group duration-400">
             <div className="inline-flex items-center justify-center text-6xl font-bold text-white xxl:text-8xl">
               <span className="duration-300 transition-colors group-hover:text-[#ec4634]">
-                65
+                550
               </span>
               <span className="duration-300 transition-colors group-hover:text-[#ec4634]">
-                k
+                +
               </span>
             </div>
             <h5 className="text-lg font-bold text-white xxl:text-xl">
-              Key Asset
+              Cloud Labs Experience
             </h5>
           </div>
-          <div className="w-full work-item h-[350px] xxl:h-[300px] rounded-[50%] flex justify-center items-center flex-col border border-[#393939] gap-3 group duration-400">
+          {/* <div className="w-full work-item h-[350px] xxl:h-[300px] rounded-[50%] flex justify-center items-center flex-col border border-[#393939] gap-3 group duration-400">
             <div className="inline-flex items-center justify-center text-6xl font-bold text-white xxl:text-8xl">
               <span className="duration-300 transition-colors group-hover:text-[#ec4634]">
                 75
@@ -260,12 +259,12 @@ function Index() {
             <h5 className="text-lg font-bold text-white xxl:text-xl">
               Dsign Experience
             </h5>
-          </div>
+          </div> */}
         </div>
       </div>
       {/*Tilte */}
-      <div className="relative text-center w-full py-[10px] pt-0">
-        <span className="section-subtitle px-3 py-1 text-[#ec4634] inline-block border border-[#393939] bg-[#161616] rounded-full text-sm font-normal mb-6">
+      <div id="In" className="relative text-center w-full py-[10px] pt-0">
+        <span className="section-subtitle px-3 py-1 text-[#ec4634] inline-block border border-[#393939] bg-[#161616] rounded-full text-sm font-normal mb-6 cursor-pointer">
           Micro Internship
         </span>
         <Splide
@@ -324,6 +323,15 @@ function Index() {
         </Splide>
       </div>
       {/*projects */}
+      <div className="w-full work lg:px-[12%] px-[8%] pb-[150px] md:pt-[50px] space-y-20">
+        <div className="w-full text-center work-content">
+          <span className="text-base text-white md:text-lg lg:text-xl xl:text-2xl leading-[24px] sm:leading-[32px] lg:leading-[40px] xl:leading-[48px] font-medium capitalize text-center">
+            I’ve gained practical experience through job simulation
+            micro-internships with top companies like TATA, Accenture, and
+            AWS,where I got to work on real-world business scenarios.
+          </span>
+        </div>
+      </div>
       <div className="relative text-center w-full py-[80px] pt-0">
         <div className="mt-8">
           <Carousel />
@@ -375,8 +383,8 @@ function Index() {
         </Swiper>
       </div> */}
       {/*Tilte */}
-      <div className="relative text-center w-full py-[10px] pt-0">
-        <span className="section-subtitle px-3 py-1 text-[#ec4634] inline-block border border-[#393939] bg-[#161616] rounded-full text-sm font-normal mb-6">
+      <div id='Le' className="relative text-center w-full py-[10px] pt-0">
+        <span className="section-subtitle px-3 py-1 text-[#ec4634] inline-block border border-[#393939] bg-[#161616] rounded-full text-sm font-normal mb-6 cursor-pointer">
           My Learning
         </span>
         <Splide
@@ -434,8 +442,23 @@ function Index() {
           </SplideSlide>
         </Splide>
       </div>
+
+      <div className="w-full text-center work-content">
+        <div className="w-full work lg:px-[12%] px-[8%] pb-[150px] md:pt-[50px] space-y-20">
+          <span className="text-base text-white md:text-lg lg:text-xl xl:text-2xl leading-[24px] sm:leading-[32px] lg:leading-[40px] xl:leading-[48px] font-medium capitalize text-center">
+            As a Facilitator in the Google Cloud Arcade Program, I’ve mentored a
+            community of over 150 students, helping them complete hands-on labs,
+            quizzes, and trivia challenges. I also create educational content on
+            my YouTube channel to simplify complex cloud topics and support
+            students in their learning journeys. My contributions have been
+            recognized by Google Cloud, and I’ve been honored with appreciation
+            and exclusive swags for my efforts.
+          </span>
+        </div>
+      </div>
+
       {/*info*/}
-      <div className="text-white font-[var(--plus-Jakarta-font)] px-[8%] lg:px[12%] py-20 grid grid-cols-1 lg:grid-cols-2 gap-14 relative z-10">
+      <div className="text-white font-[var(--plus-Jakarta-font)] px-[8%] lg:px[12%] py-20 grid grid-cols-1 lg:grid-cols-2 gap-14 relative z-10 pb-[130px]">
         {/*left*/}
         <div className="flex flex-col w-full gap-5">
           {/*Card */}
@@ -484,7 +507,7 @@ function Index() {
           <div className="grid grid-cols-2 gap-6">
             {[
               { count: 550, label: "Labs Done in Google Cloud" },
-              { count: 22, label: "Awards Won in Google Cloud" },
+              { count: 22, label: "Arcade Awards Won in Google Cloud" },
             ].map((item, i) => (
               <div
                 key={i}
@@ -566,10 +589,9 @@ function Index() {
           </div> */}
         </div>
       </div>
-      
       {/*Title */}
-      <div className="relative text-center w-full py-[10px] pt-0">
-        <span className="section-subtitle px-3 py-1 text-[#ec4634] inline-block border border-[#393939] bg-[#161616] rounded-full text-sm font-normal mb-6">
+      <div id="Ce" className="relative text-center w-full py-[10px] pt-0 ">
+        <span className="section-subtitle px-3 py-1 text-[#ec4634] inline-block border border-[#393939] bg-[#161616] rounded-full text-sm font-normal mb-6 cursor-pointer">
           Certificate
         </span>
         <Splide
@@ -626,13 +648,65 @@ function Index() {
         </Splide>
       </div>
       {/*test*/}
-      <div className="backdrop-blur-sm rounded-md px-4 py-2">
+      <div className="backdrop-blur-sm rounded-md px-4 py-2 pb-[13px]">
         {/* Other content */}
         <MoviesCarousel />
+      </div>
+      <div id="Cu" className="relative text-center w-full py-[10px] pt-0 ">
+        <span className="section-subtitle px-3 py-1 text-[#ec4634] inline-block border border-[#393939] bg-[#161616] rounded-full text-sm font-normal mb-6 cursor-pointer">
+          Connect Us
+        </span>
+        <Splide
+          options={{
+            type: "loop",
+            gap: "10rem",
+            drag: false,
+            arrow: false,
+            pagination: false,
+            autoScroll: {
+              speed: 1.5,
+              pauseOnHover: true,
+              pauseOnFocus: true,
+            },
+          }}
+          extensions={{ AutoScroll }} // ✅ wrap into object
+          className="w-full"
+          aria-label="Smooth Scrllping Work Slider"
+        >
+          <SplideSlide>
+            <div className="section-title">Connect Us</div>
+          </SplideSlide>
+          <SplideSlide>
+            <div className="section-title">Connect Us</div>
+          </SplideSlide>
+          <SplideSlide>
+            <div className="section-title">Connect Us</div>
+          </SplideSlide>
+          <SplideSlide>
+            <div className="section-title">Connect Us</div>
+          </SplideSlide>
+          <SplideSlide>
+            <div className="section-title">Connect Us</div>
+          </SplideSlide>
+          <SplideSlide>
+            <div className="section-title">Connect Us</div>
+          </SplideSlide>
+          <SplideSlide>
+            <div className="section-title">Connect Us</div>
+          </SplideSlide>
+          <SplideSlide>
+            <div className="section-title">Connect Us</div>
+          </SplideSlide>
+          <SplideSlide>
+            <div className="section-title">Connect Us</div>
+          </SplideSlide>
+          <SplideSlide>
+            <div className="section-title">Connect Us</div>
+          </SplideSlide>
+        </Splide>
       </div>
     </>
   );
 }
-    
 
-export default Index
+export default Index;
