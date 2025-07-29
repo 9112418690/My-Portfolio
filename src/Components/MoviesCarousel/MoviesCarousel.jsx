@@ -50,7 +50,7 @@ const MoviesCarousel = () => {
   return (
     <div className="movies-list">
       <button className="pre-btn" onClick={() => scroll("prev")}>
-        <img src="" alt="Previous" />
+        
       </button>
 
       <div className="card-container" ref={containerRef}>
@@ -83,7 +83,7 @@ const MoviesCarousel = () => {
       </div>
 
       <button className="nxt-btn" onClick={() => scroll("next")}>
-        <img src="" alt="Next" />
+        
       </button>
     </div>
   );
