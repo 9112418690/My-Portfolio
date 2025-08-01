@@ -198,13 +198,7 @@ function Index() {
       <div className="w-full work lg:px-[12%] px-[8%] pb-[150px] md:pt-[50px] space-y-20">
         <div className="w-full text-center work-content">
           <span className="text-base text-white md:text-lg lg:text-xl xl:text-2xl leading-[24px] sm:leading-[32px] lg:leading-[40px] xl:leading-[48px] font-medium capitalize text-center">
-            I'm Anmol Gour, currently pursuing my B.Tech in Computer Science
-            Engineering. I have a strong interest in Full Stack Web Development,
-            and I’m actively learning and working with technologies such as
-            HTML, CSS, JavaScript, Node.js, MongoDB, React, Vite, Tailwind CSS,
-            Angular,Bootstrap, and Google Cloud. In addition to my development
-            work, I’m passionate about Problem Solving and enjoy tackling coding
-            challenges to sharpen my logic and analytical skills.
+            I successfully completed the Google Cloud Arcade Facilitator Program, a structured campaign where participants earn digital badges and Arcade points through hands-on labs, trivia, and game-based learning challenges—redeemable for exclusive Google Cloud swag such as T-shirts, stickers, and enamel pin badges. During my participation, I actively supported peers, friends, and students with practical guidance on completing labs and quizzes. Additionally, I collaborated with Anmol to create concise YouTube tutorials on Google Cloud, breaking down complex cloud concepts and reinforcing lab-based learning. This combination of program completion, peer mentorship, and content creation demonstrates my commitment to both personal growth and community support within the Google Cloud ecosystem.
           </span>
         </div>
         <div className="grid justify-center w-full grid-cols-1 gap-6 work-wrapper xl:grid-cols-3 item-center xl:gap-0">
