@@ -440,13 +440,7 @@ function Index() {
       <div className="w-full text-center work-content">
         <div className="w-full work lg:px-[12%] px-[8%] pb-[150px] md:pt-[50px] space-y-20">
           <span className="text-base text-white md:text-lg lg:text-xl xl:text-2xl leading-[24px] sm:leading-[32px] lg:leading-[40px] xl:leading-[48px] font-medium capitalize text-center">
-            As a Facilitator in the Google Cloud Arcade Program, I’ve mentored a
-            community of over 150 students, helping them complete hands-on labs,
-            quizzes, and trivia challenges. I also create educational content on
-            my YouTube channel to simplify complex cloud topics and support
-            students in their learning journeys. My contributions have been
-            recognized by Google Cloud, and I’ve been honored with appreciation
-            and exclusive swags for my efforts.
+                       I successfully completed the Google Cloud Arcade Facilitator Program, a structured campaign where participants earn digital badges and Arcade points through hands-on labs, trivia, and game-based learning challenges—redeemable for exclusive Google Cloud swag such as T-shirts, stickers, and enamel pin badges. During my participation, I actively supported peers, friends, and students with practical guidance on completing labs and quizzes. Additionally, I collaborated with Anmol to create concise YouTube tutorials on Google Cloud, breaking down complex cloud concepts and reinforcing lab-based learning. This combination of program completion, peer mentorship, and content creation demonstrates my commitment to both personal growth and community support within the Google Cloud ecosystem.
           </span>
         </div>
       </div>
